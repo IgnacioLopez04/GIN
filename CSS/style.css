@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    list-style: none;
+}
+
+/*-------------------Nav----------------*/
+header{
+    width: 100%;
+    background-color: aquamarine;
+    border: 1px solid aquamarine;
+    box-shadow: 0px 3px 10px rgba(0,0,0,0.5);
+    position: fixed;
+    z-index: 10;
+}
+
+header div{
+    width: 90%;
+    padding: 20px;
+    margin: auto;
+
+    display: flex;
+    align-items: center;
+}
+
+header h1{
+    flex: 1;
+    text-decoration: underline;
+}
+
+header nav ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav > ul{
+    display: flex;
+}
+
+nav ul li{
+    list-style: none;
+    font-size: 18px;
+    position: relative;
+}
+
+nav > ul > li:not(:last-child):after{
+    content: "|";
+    margin-left: 10px;
+}
+
+nav li a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+nav ul li ul{
+    position: absolute;
+    width: 175px;
+    padding: 10px 20px 10px 0px;
+    display: none;
+    background-color: aquamarine;
+    border-radius: 0% 0% 10% 10%;
+}
+
+nav ul li:hover ul{
+    display: block;
+}
+
+/*------------------Main--------------*/
+
+main{
+    box-sizing: border-box;
+    width: 100%;
+    padding: 100px 40px 0px 40px;
+    text-align: justify;
+}
+
+h2,h3,h4{
+    padding: 10px 0px;
+}
+
+main h2{
+    border-bottom: 2px solid black;
+}
+
+main ul{
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+p{
+    padding-top: 10px;
+    text-indent: 40px;
+}
+
+/*-------------------Footer--------------*/
+footer{
+    background-color: aquamarine;
+    padding: 20px 30px;
+}
+
+footer div{
+    display: flex;
+    width: 100%;
+}
+
+footer div ul{
+    display: flex;
+    align-content: flex-end;
+}
+
+#datos{
+    flex: 1;
+    flex-direction: column;
+}
+
+#redes li{
+    margin-left: 5px;
+}
+
+#redes a{
+    background: url(../Imagenes/Sprite.png) no-repeat 0 -78px;
+    overflow: hidden;
+    text-indent: -200px;
+    display: inline-block;
+
+    width: 39px;
+    height: 39px;
+}
+
+#redes #fb:hover{
+    background-position: 0 -39px;
+}
+
+#redes #pt:hover{
+    background-position: -195px -39px;
+}
+
+#redes #pt{
+    background-position: -195px -78px;
+}
+
+#redes #tw:hover{
+    background-position: -312px -39px;
+}
+
+#redes #tw{
+    background-position: -312px -78px;
+}
+
+#redes #yt:hover{
+    background-position: -390px -39px;
+}
+
+#redes #yt{
+    background-position: -390px -78px;
+}
+
+/*----------------Imagenes----------------*/
+
+#gin{
+    float: right;
+    margin: 20px 10px 20px 20px;
+}
+
+#gin-tonic-trago{
+    float: right;
+    width: 300px;
+    margin: 0px 10px 0px 20px;
+    transform: translate(0,-30px);
+}
+
+#negroni-trago{
+    float: right;
+    width: 200px;
+    margin: 0px 10px 10px 20px;
+    transform: translate(0,-40px);
+}
+
+#gin-fizz-trago{
+    float: right;
+    width: 250px;
+    margin: 0px 10px 10px 20px;
+    transform: translate(0,-30px);
+}
+
