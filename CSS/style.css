@@ -163,29 +163,99 @@ footer div ul{
 
 /*----------------Imagenes----------------*/
 
+#tragos_list{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#tragos_display ul li{
+    display: flex;
+    
+    width: 100%;
+}
+/*Gin*/
+.titulo{
+    width: 8%;
+    height: 40px;
+}
+
+.texto{
+    width: 50%;
+    padding: 0px 20px;
+    margin: 10px 0px;
+    border-right: 2px solid aquamarine;
+}
+
+.contenedor_ingredientes{
+    display: block;
+    width: 20%;
+    margin-left: 20px;
+}
+
+.contenedor_ingredientes h3{
+    padding-left: 10px;
+}
+
+.contenedor_ingredientes li{
+    padding-top: 5px;
+    margin-right: 10px;
+    text-align: start;
+}
+
+#negroni-tag li{
+    display: block;
+}
+
 #gin{
     float: right;
     margin: 20px 10px 20px 20px;
 }
 
 #gin-tonic-trago{
+    display: flex;
     float: right;
     width: 300px;
-    margin: 0px 10px 0px 20px;
-    transform: translate(0,-30px);
+    margin-right: 20px;
+    padding: 10px 0px;
+    
+    aspect-ratio: 3/2;
+    object-fit: fill;
+    border-radius: 50px;
 }
 
+/*Negroni*/
 #negroni-trago{
     float: right;
     width: 200px;
     margin: 0px 10px 10px 20px;
-    transform: translate(0,-40px);
+
+    aspect-ratio: 3/2;
+    object-fit:cover;
+    border-radius: 50px;
 }
+
+#texto_negroni{
+    width: 58.8%;
+}
+
+/*Pomelo Sour*/
+#texto_pomelo{
+    width: 81.8%;
+}
+
+/*Gin Fizz*/
 
 #gin-fizz-trago{
     float: right;
     width: 250px;
     margin: 0px 10px 10px 20px;
-    transform: translate(0,-30px);
+
+    aspect-ratio: 3/2;
+    object-fit:cover;
+    border-radius: 50px;
+}
+
+#texto_fizz{
+    width: 53.8%;
 }
 
